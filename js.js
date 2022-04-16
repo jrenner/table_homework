@@ -12,20 +12,22 @@ var ingredients = [
 var ingredientsLength = ingredients.length;
 
 var table = document.getElementById("myTable"); //finding the table element
-text = ingredients[0];
+//text = ingredients[0];
+var text1 = "";
 
 //Peform the for loop
-for (i = 0, text = ""; i < ingredientsLength; i++) {
+for (i = 0; i < ingredientsLength; i++) {
 	var row = table.insertRow(-1);
 	var cell = row.insertCell(0);
-	text += ingredients[i] + "<br>";
-	document.getElmentById("recipeOutput").innerHTML = text;
+	text1 += ingredients[i] + "<br>";	
 	}
+document.getElmentById("recipeOutput").innerHTML = text1;
 
-for (i = 0, text = ""; i < ingredientsLength; i++) {
+var text2 = "";
+for (i = 0; i < ingredientsLength; i++) {
 	alert(i)
 	var row = table.insertRow(-1);
 	var cell = row.insertCell(0);
-	text += ingredients[i] + '<br>';
-	document.getElementById("table").innerHTML = text;
-}	
+	text2 += ingredients[i] + '<br>';	
+}
+document.getElementById("table").innerHTML = text2;
